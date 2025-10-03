@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: teal;
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      color: white;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .navbar .logo span {
+      background: orange;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: red;
+    }
+
+    .dropdown a:hover {
+      background: #f0f0f0;
+    }
+
+    /* Back Button */
+    .bg-btn {
+      position: left;
+      top: 70px;
+      right: 20px;
+      padding: 10px 15px;
+      margin: 15px 20px;
+      background: black;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .bg-btn span {
+      font-size: 18px;
+    }
+
+    /* Content */
+    .content {
+      padding: 20px;
+      text-align: center;
+
+    }
+
+    .content h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      margin: 15px 0 10px;
+      font-weight: bold;
+      color: darkmagenta;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background:teal;
+      padding: 20px;
+      text-align: center;
+      color:white;
+    
+    }
+
+    footer h3 {
+      margin-bottom: 5px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      transition: transform 0.3s;
+    }
+    .social-icons a img{
+      width: 40px;
+      height: 40px;
+    }
+    .social-icons a:hover{
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <span></span> Astha Singh <small style="font-weight:normal; margin-left:5px;">Editor</small>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="dropdown" id="dropdown">
+      <a href="./resume.html">Resume</a>
+      <a href="./index.html">Home</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Back Button with Arrow -->
+  <button class="bg-btn" onclick="goHome()">
+    <span>←</span> Back
+  </button>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Projects</h1>
+
+    <!-- Project 1 -->
+    <h2>Online To-let</h2>
+    <p>
+      The Online Toilet Room Rental System is a modern
+      digital platform designed to make public sanitation
+      facilities more accessible and convenient. With the
+      help of this system, users can easily search, locate,
+      and book nearby toilets in advance through their mobile
+      or web application. This solution not only saves time but
+      also ensures cleanliness and safety, as service providers 
+      can regularly update the status of hygiene and availability.
+    </p>
+    <img src="./project1.png" alt="Project 1 Image">
+
+    <!-- Project 2 -->
+    <h2>Mobile Application</h2>
+    <p>
+      My project is a Durga Puja mobile application developed for Android devices.
+      This app is designed to provide users with detailed information about Durga
+      Puja, including the significance of the festival, rituals, dates, and cultural
+      events. It features interactive sections like photo galleries, live updates of
+      Puja pandals, and notifications about important celebrations. The app also includes
+      a user-friendly interface, making it easy for devotees and festival enthusiasts to
+      explore Puja schedules, nearby events, and traditional recipes. Developed using Android.
+    </p>
+    <img src="./project2.png" alt="Project 2 Image">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Phone</h3>
+    <p>9696615592</p>
+    <h3>Email</h3>
+    <p>singhastha7373@gmail.com</p>
+    <h3>Follow Me</h3>
+    <div class="social-icons">
+     <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/astha-singh-4a91bb2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="./linkdin.jpg" alt="LinkedIn">
+            </a>
+            <a href="https://t.me/t.me/Chauhanvans" target="_blank">
+                <img src="./telegram.jpg" alt="Telegram">
+            </a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("dropdown");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    function goHome() {
+      window.location.href = "index.html"; 
+    }
+  </script>
+
+</body>
+</html>
